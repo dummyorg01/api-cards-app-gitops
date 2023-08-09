@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-cards-app
+  namespace: flux-system
+spec:
+  selector:
+    matchLabels:
+      app: api-cards-app
+      template:
+    metadata:
+      labels:
+        app: api-cards-app
+    spec:
+      containers:
+        - name: api-cards-appd
+          image: juniorqdls/api-cards-app:5.0.0 # {"$imagepolicy": "flux-system:api-cards-app"}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
