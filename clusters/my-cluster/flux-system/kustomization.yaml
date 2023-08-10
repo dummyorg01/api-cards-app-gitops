@@ -5,3 +5,5 @@ resources:
 - gotk-sync.yaml
 - api-cards-app-registry.yaml
 - api-cards-app-policy.yaml
+- flux-system-automation.yaml
+- ../../../deployment.yaml
