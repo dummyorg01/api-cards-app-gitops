@@ -4,3 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - api-cards-app-registry.yaml
+- api-cards-app-policy.yaml
