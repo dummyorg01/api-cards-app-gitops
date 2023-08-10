@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-cards-appd
-          image: juniorqdls/api-cards-app:5.0.0 # {"$imagepolicy": "flux-system:api-cards-app"}
+          image: juniorqdls/api-cards-app:5.0.2 # {"$imagepolicy": "flux-system:api-cards-app"}
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
