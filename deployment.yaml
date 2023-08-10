@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: api-cards-app
-      template:
+  template:
     metadata:
       labels:
         app: api-cards-app
